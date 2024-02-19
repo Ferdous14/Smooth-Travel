@@ -12,7 +12,11 @@
 
 
     <!-- css here -->
-    <link rel="stylesheet" href="./style/styles.css">
+    <style>
+        a{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -47,9 +51,9 @@
                     Yes, you can run unit tests and view the results directly within the app. The <br> integrated
                     testing features allow for a streamlined .
                 </p>
-                <button class="px-7 py-5 bg-[#1DD100] text-xl font-bold rounded-xl border-none">
-                    Buy Tickets
-                </button>
+                
+                   <a class="px-7 py-5 bg-[#1DD100] text-xl font-bold rounded-xl border-none" href="#bus-info">Buy Tickets</a> 
+                
             </div>
         </div>
         <div class="flex justify-center gap-10 items-center -translate-y-[65%] ">
@@ -110,7 +114,7 @@
         </div>
 
         <!-- Bus and seat section start -->
-        <section class="container px-5 bg-[#F7F8F8] pb-36 rounded-3xl border-t-2 border-[#1DD100] rounded-t-3xl mt-24">
+        <section id="bus-info" class="container px-5 bg-[#F7F8F8] pb-36 rounded-3xl border-t-2 border-[#1DD100] rounded-t-3xl mt-24">
             <div class="   pb-10">
                 <h3 class="text-4xl font-bold text-center pt-24">P.H Paribahan</h3>
                 <p class="text-lg font-normal text-center pt-6">Yes, you can run unit tests and view the results
@@ -372,8 +376,6 @@
                                 <div id="dynamic-list"  class="grid grid-cols-3 text-center">
                                
                                 </div>
-                                
-                            
                         </div>
 
                         <hr class="bg-[#03071233] border border-b-gray-950">
@@ -381,6 +383,12 @@
                         <div class=" flex justify-between text-[#030712] text-base font-medium pt-3">
                             <h4>Total Price</h4>
                             <p>BDT <span id="total-price">0</span></p>
+                        </div>
+                        
+                        <hr class="bg-[#03071233] border border-b-gray-950">
+
+                        <div id="discounted-price" class="flex justify-between py-2">
+
                         </div>
 
                         <div class="flex justify-between py-4">
@@ -401,16 +409,13 @@
                     </div>
                     <div>
                         <h4 class="text-[#030712] text-base font-semibold py-3">Phone Number*</h4>
-                        <input class="border border-[#0307121A] text-base font-normal w-full py-3 rounded-xl pl-5"
-                            placeholder="Enter Your Phone Number" type="text" name="" id="">
+                        <input class="border border-[#0307121A] text-base font-normal w-full py-3 rounded-xl pl-5" placeholder="Enter Your Phone Number" type="number" name="" id="phone-input">
                     </div>
                     <div>
                         <h4 class="text-[#030712] text-base font-semibold py-3">Email ID</h4>
-                        <input class="border border-[#0307121A] text-base font-normal w-full py-3 rounded-xl pl-5"
-                            placeholder="Enter Your Email ID" type="email" name="" id="">
+                        <input class="border border-[#0307121A] text-base font-normal w-full py-3 rounded-xl pl-5 mb-5" placeholder="Enter Your Email ID" type="email" name="" id="">
                     </div>
-                    <button id="btn-modal" class="bg-[#1DD100] w-full text-white text-xl font-extrabold py-3 mt-3 rounded-2xl">Next</button>
-
+                    <button id="btn-modal" disabled class="btn bg-[#1DD100] text-white w-full text-2xl">Next</button>
                     <div class="flex justify-evenly pt-6 text-[#03071299]  text-base font-normal underline">
                         <a href="">Terms And Conditions</a>
                         <a href="">Cancellation Policy</a>
