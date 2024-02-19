@@ -86,8 +86,8 @@ applyBtn.addEventListener('click', function () {
     const inputField = document.getElementById('coupon');
     const couponCode = inputField.value;
     const grandTotalElement = document.getElementById('grand-total');
-    
-    if (couponCode === 'New15') {
+
+    if (couponCode === 'NEW15') {
         const discount = sum * 0.15;
         const newGrandTotal = sum - discount;
         grandTotalElement.innerText = newGrandTotal;
@@ -99,7 +99,7 @@ applyBtn.addEventListener('click', function () {
         discountedPrice.appendChild(p1);
 
         const p = document.createElement('p');
-        p.innerText = newGrandTotal;
+        p.innerText = discount;
         discountedPrice.appendChild(p);
 
     } else if (couponCode === 'Couple 20') {
@@ -108,6 +108,15 @@ applyBtn.addEventListener('click', function () {
         grandTotalElement.innerText = finalGrandTotal;
         applyBtn.setAttribute('hidden', true);
         inputField.setAttribute('hidden', true);
+
+        const p1 = document.createElement('p');
+        p1.innerText = discountText;
+        discountedPrice.appendChild(p1);
+
+        const p = document.createElement('p');
+        p.innerText = newDiscount;
+        discountedPrice.appendChild(p);
+
     } else {
         alert('Invalid Cupon')
     }
