@@ -153,14 +153,13 @@
                         </div>
                         <hr class="bg-[#03071233] border border-dashed">
                         <div class="flex justify-evenly py-3">
-                            <p
-                                class="bg-[#0307120D] px-6 py-5 rounded-2xl text-base text-[#030712CC] font-medium">Boarding
+                            <p class="bg-[#0307120D] px-6 py-5 rounded-2xl text-base text-[#030712CC] font-medium">
+                                Boarding
                                 Point - Laxmipur</p>
-                                <p
-                                class="bg-[#0307120D] px-6 py-5 rounded-2xl text-base text-[#030712CC] font-medium">Dropping
+                            <p class="bg-[#0307120D] px-6 py-5 rounded-2xl text-base text-[#030712CC] font-medium">
+                                Dropping
                                 Point - Bogura</p>
-                                <p
-                                class="bg-[#0307120D] px-9 py-5 rounded-2xl text-base text-[#030712CC] font-medium">Est.
+                            <p class="bg-[#0307120D] px-9 py-5 rounded-2xl text-base text-[#030712CC] font-medium">Est.
                                 Time - 11 Hour</p>
                         </div>
                     </div>
@@ -368,24 +367,23 @@
                         </div>
                         <hr class="bg-[#03071233] border border-dashed">
 
-                        
+
 
                         <hr class="bg-[#03071233] border border-b-gray-950">
 
                         <div class=" flex justify-between text-[#030712] text-base font-medium pt-3">
                             <h4>Total Price</h4>
-                            <p>BDT <span>0</span></p>
+                            <p>BDT <span id="total-price">0</span></p>
                         </div>
 
                         <div class="flex justify-between py-4">
-                            <input class="w-full rounded-lg px-3" placeholder="Have any coupon?" type="text" name=""
-                                id="">
-                            <button class="btn bg-[#1DD100] text-white">Apply</button>
+                            <input class="w-full rounded-lg px-3" placeholder="Have any coupon?" type="text" name="" id="coupon">
+                            <button id="apply-btn" disabled class="btn bg-[#1DD100] text-white">Apply</button>
                         </div>
 
                         <div class="flex justify-between text-[#030712] text-base font-medium">
                             <h4>Grand Total</h4>
-                            <p>BDT <span>0</span></p>
+                            <p>BDT <span id="grand-total">0</span></p>
                         </div>
 
                     </div>
@@ -442,7 +440,8 @@
                 <hr class="bg-gray-800 border border-dashed my-10">
                 <div class="flex justify-between">
                     <div>
-                        <p><small class="text-[#FFFFFFCC] text-sm font-normal">@all rights reserved, P-Ticket services limited.2024</small></p>
+                        <p><small class="text-[#FFFFFFCC] text-sm font-normal">@all rights reserved, P-Ticket services
+                                limited.2024</small></p>
                     </div>
                     <div class="flex justify-around gap-10 no-underline list-none text-white text-base font-medium">
                         <li>Terms & condition</li>
